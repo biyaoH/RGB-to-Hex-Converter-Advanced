@@ -1,0 +1,85 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  width: 600px;
+  height: 350px;
+  border: 1px solid darkgray;
+  background-color: turquoise;
+}
+
+#rgb-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: space;
+  width: 600px;
+  height: 250px;
+}
+
+#input-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#r-line, #g-line, #b-line {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  width: 300px;
+  height: 30px;
+}
+
+#r-titre, #g-titre, #b-titre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+}
+
+#r-number, #g-number, #b-number {
+  width: 70px;
+  height: 30px;
+  text-align: center;
+  font-size: 1.3em;
+}
+
+#r-titre, #r-number {
+  background-color: red;
+}
+
+#g-titre, #g-number {
+  background-color: green;
+}
+
+#b-titre, #b-number {
+  background-color: blue;
+}
+
+#b-titre, #b-number {
+  color: white;
+}
+
+h3 {
+  margin-top: 5px;
+}
+
+#hex-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 50px;
+  background-color: rgba(255,255,255,0.3);
+  position:static; /* IE6、7、8只能设置position:static(默认属性) ，否则会导致子元素继承Alpha值 */
+  *zoom:1; /* 激活IE6、7的haslayout属性，让它读懂Alpha */
+}
+
+
+#hex-box h3{
+    position: relative;/* 设置子元素为相对定位，可让子元素不继承Alpha值，保证字体颜色不透明 */
+}     

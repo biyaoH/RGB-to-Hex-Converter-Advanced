@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>RGB to Hex Converter</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div id="rgb-container">
+      <form id="input-form" class="form-inline">
+        <div id="r-line">
+          <div id="r-titre">
+            <h3>R</h3>
+          </div>
+
+          <input id="r-input" type="range" min="0" max="255" step="1" value="0" oninput="controller.valueRGB()"
+            onchange="controller.valueRGB()">
+
+          <div id="r-number">0
+          </div>
+        </div>
+
+        <div id="g-line">
+          <div id="g-titre">
+            <h3>G</h3>
+          </div>
+
+          <input id="g-input" type="range" min="0" max="255" step="1" value="0" oninput="controller.valueRGB()"
+            onchange="controller.valueRGB()">
+
+          <div id="g-number">0
+          </div>
+        </div>
+
+        <div id="b-line">
+          <div id="b-titre">
+            <h3>B</h3>
+          </div>
+
+          <input id="b-input" type="range" min="0" max="255" step="1" value="0" oninput="controller.valueRGB()"
+            onchange="controller.valueRGB()">
+
+          <div id="b-number">0
+          </div>
+        </div>
+
+
+      </form>
+    </div>
+    <div id="hex-box">
+      <h3 id="hex-number"></h3>
+
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
